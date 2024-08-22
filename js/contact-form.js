@@ -1,21 +1,28 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+document.querySelector('#contact-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
   
-    const formData = new FormData(this);
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
   
-    fetch('/api/sendEmail.js', {
-      method: 'POST',
-      body: JSON.stringify(Object.fromEntries(formData)),
-      headers: {
-        'Content-Type': 'application/json'
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      const result = await response.json();
+      if (response.ok) {
+        alert('Message sent successfully!');
+      } else {
+        alert('Failed to send message.');
       }
-    })
-    .then(response => response.json())
-    .then(data => {
-      alert('Email sent successfully');
-      document.getElementById('contact-form').reset();
-    })
-    .catch(error => {
-      alert('Failed to send email');
-    });
+      console.log('Success:', result);
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to send message.');
+    }
   });
+  

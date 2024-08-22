@@ -7,13 +7,13 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'petviewerhelp@gmail.com',
+        user: 'petviewerhelp@gmail.com', 
         pass: 'Testing123!',
       },
     });
 
     const mailOptions = {
-      from: 'petviewerhelp@gmail.com',
+      from: email,
       to: 'petviewerhelp@gmail.com',
       subject: `Message from ${name}`,
       text: `Phone: ${phone}\n\nMessage: ${message}`,
@@ -23,6 +23,7 @@ export default async function handler(req, res) {
       await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
+      console.error('Error sending email:', error); // Para depuración
       res.status(500).json({ message: 'Failed to send email' });
     }
   } else {
