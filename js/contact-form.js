@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   
     const formData = new FormData(this);
   
-    fetch('/api/sendEmail', {
+    fetch('/api/sendEmail.js', {
       method: 'POST',
       body: JSON.stringify(Object.fromEntries(formData)),
       headers: {
