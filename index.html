@@ -31,9 +31,9 @@
    <!-- owl stylesheets -->
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen">
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 
 <body>
@@ -162,23 +162,17 @@
    <div class="software_section layout_padding" id="clients">
       <div class="container">
          <h1 class="software_taital">Some of our happy clients</h1>
-         <p class="software_text">Here’s a glimpse of the diverse websites we’ve crafted for our clients, reflecting our expertise and dedication to custom web solutions.</p>
-         <div class="software_section_2 layout_padding">
-            <div class="owl-carousel">
-               <div>
-                  <img src="images/img-6.png" class="image_6">
-                  <h4 class="ipsum_text">Ipsum available,</h4>
-               </div>
-               <div>
-                  <img src="images/img-7.png" class="image_6">
-                  <h4 class="ipsum_text">Ipsum available,</h4>
-               </div>
-               <div>
-                  <img src="images/img-8.png" class="image_6">
-                  <h4 class="ipsum_text">Ipsum available,</h4>
-               </div>
-            </div>
-         </div>
+         <p class="software_text">Here’s a selection of clients who have been delighted with our digital solutions and services.</p>
+         
+         <div class="brand-carousel">
+            <div><img src="images/grafito.png" alt="Grafito"></div>
+            <div><img src="images/laminart.png" alt="Laminart"></div>
+            <div><img src="images/suiza.png" alt="Suiza"></div>
+            <div><img src="images/ces.png" alt="CES"></div>
+            <div><img src="images/alma_coffee.png" alt="Alma"></div>
+        </div>
+        
+
       </div>
    </div>
    <!--software section end -->
@@ -282,26 +276,11 @@
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
    <script src="./js/ham-menu.js"></script>
-   <script>
-      var $owl = $('.owl-carousel');
-
-      $owl.children().each(function (index) {
-         $(this).attr('data-position', index); // NB: .attr() instead of .data()
-      });
-
-      $owl.owlCarousel({
-         center: true,
-         loop: true,
-         items: 3,
-      });
-
-      $(document).on('click', '.owl-item>div', function () {
-         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
-         var $speed = 300;  // in ms
-         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-      });
-
-   </script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+   <script src="./js/brand-carousel.js"></script>
+</body>
 </body>
 
 </html>

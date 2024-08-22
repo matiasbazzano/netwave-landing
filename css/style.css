@@ -18,7 +18,6 @@
 @import url(icomoon.css);
 @import url(css/font-awesome.min.css);
 @import url(meanmenu.css);
-@import url(owl.carousel.min.css);
 @import url(swiper.min.css);
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
@@ -563,6 +562,29 @@ button {
     }
 }
 
+.brand-carousel {
+    width: 70%;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.brand-carousel img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    filter: grayscale(95%);
+    align-items: center;
+}
+
+.brand-carousel:hover img {
+    filter: grayscale(0%);
+}
+
+.slick-dots {
+    display: none !important;
+}
+
 .typed-cursor {
     font-size: 55px; /* Tamaño del cursor debe coincidir con el texto */
     color: #323232; /* Color del cursor */
@@ -875,6 +897,7 @@ button {
   font-size: 16px;
   color: #545455;
   text-align: center;
+  margin-bottom: 30px !important;
 }
 .software_section_2{
   width: 100%;
