@@ -613,6 +613,37 @@ button {
       .works_section_2 {
         margin-bottom: -50px;
       }
+
+      .about_section {
+        text-align: center; /* Centra todo el contenido de la sección */
+      }
+    
+      .about_section .col-md-6 {
+        float: none; /* Elimina el float para móviles */
+        display: inline-block; /* Cambia la disposición de las columnas para centrarlas */
+        text-align: center; /* Centra el texto dentro de las columnas */
+        width: 100%; /* Ajusta el ancho para que las columnas se apilen en móviles */
+      }
+    
+      .about_section .image_1 {
+        display: block; /* Cambia el display para ignorar el float */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+        width: 80%; /* Ajusta el ancho según sea necesario */
+        float: none; /* Elimina el float para móviles */
+      }
+    
+      .about_section .read_bt {
+        display: inline-block; /* Asegura que el botón se centre */
+        width: auto; /* Ajusta el ancho automáticamente */
+        margin: 20px auto; /* Añade margen para centrar el botón y espacio superior/inferior */
+        float: none; /* Elimina el float para móviles */
+      }
+    
+      .about_section .read_bt a {
+        display: inline-block; /* Asegura que el enlace se centre correctamente */
+        padding: 10px 20px; /* Ajusta el espaciado del botón */
+        font-size: 16px; /* Ajusta el tamaño de fuente del botón */
+      }
     }
 
     @media screen and (max-width: 375px) {
@@ -630,6 +661,37 @@ button {
           font-size: 15px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
           margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
         }
+
+        .about_section {
+            text-align: center; /* Centra todo el contenido de la sección */
+          }
+        
+          .about_section .col-md-6 {
+            float: none; /* Elimina el float para móviles */
+            display: inline-block; /* Cambia la disposición de las columnas para centrarlas */
+            text-align: center; /* Centra el texto dentro de las columnas */
+            width: 100%; /* Ajusta el ancho para que las columnas se apilen en móviles */
+          }
+        
+          .about_section .image_1 {
+            display: block; /* Cambia el display para ignorar el float */
+            margin: 0 auto; /* Centra horizontalmente la imagen */
+            width: 80%; /* Ajusta el ancho según sea necesario */
+            float: none; /* Elimina el float para móviles */
+          }
+        
+          .about_section .read_bt {
+            display: inline-block; /* Asegura que el botón se centre */
+            width: auto; /* Ajusta el ancho automáticamente */
+            margin: 20px auto; /* Añade margen para centrar el botón y espacio superior/inferior */
+            float: none; /* Elimina el float para móviles */
+          }
+        
+          .about_section .read_bt a {
+            display: inline-block; /* Asegura que el enlace se centre correctamente */
+            padding: 10px 20px; /* Ajusta el espaciado del botón */
+            font-size: 16px; /* Ajusta el tamaño de fuente del botón */
+          }
       }
 
       @media screen and (max-width: 884px) {
@@ -647,6 +709,37 @@ button {
           font-size: 15px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
           margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
         }
+
+        .about_section {
+            text-align: center; /* Centra todo el contenido de la sección */
+          }
+        
+          .about_section .col-md-6 {
+            float: none; /* Elimina el float para móviles */
+            display: inline-block; /* Cambia la disposición de las columnas para centrarlas */
+            text-align: center; /* Centra el texto dentro de las columnas */
+            width: 100%; /* Ajusta el ancho para que las columnas se apilen en móviles */
+          }
+        
+          .about_section .image_1 {
+            display: block; /* Cambia el display para ignorar el float */
+            margin: 0 auto; /* Centra horizontalmente la imagen */
+            width: 80%; /* Ajusta el ancho según sea necesario */
+            float: none; /* Elimina el float para móviles */
+          }
+        
+          .about_section .read_bt {
+            display: inline-block; /* Asegura que el botón se centre */
+            width: auto; /* Ajusta el ancho automáticamente */
+            margin: 20px auto; /* Añade margen para centrar el botón y espacio superior/inferior */
+            float: none; /* Elimina el float para móviles */
+          }
+        
+          .about_section .read_bt a {
+            display: inline-block; /* Asegura que el enlace se centre correctamente */
+            padding: 10px 20px; /* Ajusta el espaciado del botón */
+            font-size: 16px; /* Ajusta el tamaño de fuente del botón */
+          }
       }
 
 
