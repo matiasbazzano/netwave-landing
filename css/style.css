@@ -556,19 +556,41 @@ button {
     }
 
     .logo {
-        flex-direction: row;
-        justify-content: center;
+        display: flex;
+        align-items: center; /* Centra verticalmente el logo y el texto */
+        justify-content: flex-start; /* Alinea el logo y el texto al inicio */
+        text-align: center; /* Asegura que el texto esté centrado */
     }
 
     .logo img {
         max-width: 50px;
-        margin-right: 5px;
+        margin-right: 10px; /* Espacio entre el logo y el texto */
     }
 
     .netwave-text {
-        font-size: 20px; 
-        top: 0;
+        font-size: 20px;
+        line-height: 1; /* Asegura que el texto esté alineado con el logo */
+        margin: 0;
     }
+
+    .banner_main {
+        padding: 25px 0;
+        text-align: left;
+        background-color: #f7f7f7;
+     }
+
+     .services_section {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+     }
+
+     .banner_main {
+        padding-bottom: 50px;
+     }
+
+     .about_section {
+        margin-bottom: -80px;
+     }
 }
 
 .brand-carousel {
@@ -943,6 +965,8 @@ button {
   width: 100%;
   float: left;
   position: relative;
+  background-color: #f9f9fb;
+  padding-bottom: 50px;
 }
 .work_taital {
     width: 100%;
