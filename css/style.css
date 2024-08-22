@@ -361,7 +361,6 @@ button {
 }
 
 .footer_logo {
-    border-top: 1px solid #fff;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -1135,17 +1134,6 @@ button {
   float: left;
 
 }
-.works_section:after {
-    content: '';
-    position: absolute;
-    height: 245px;
-    width: 400px;
-    top: -30px;
-    background-image: url(../images/img-9.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    left: 0;
-}
 
 .fully_text{
   width: 100%;
@@ -1176,10 +1164,19 @@ button {
   background-color: #f9f9fb;
   height: auto;
   margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.image_10{
-  width: 100%;
-  float: left;
+.image_10 {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+
+  .image_10:hover {
+    transform: scale(1.05);
 }
 .email_text {
     width: 90%;
@@ -1194,9 +1191,16 @@ button {
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 0px;
+    border-radius: 13px;
 }
+
+.massage-bt {
+    resize: none;
+    border-radius: 13px;
+  }
+
 input.email-bt::placeholder {
-    color: #2a2a2c;
+    color: #a0a0a0;
 }
 .massage-bt {
     width: 100%;
@@ -1208,7 +1212,7 @@ input.email-bt::placeholder {
     border: 0px;
 }
 textarea#comment::placeholder {
-    color: #2a2a2c;
+    color: #a0a0a0;
 }
 .send_btn {
     width: 170px;
@@ -1229,6 +1233,7 @@ textarea#comment::placeholder {
   float: left;
   background-color: #2a2a2c;
   height: auto;
+  padding: 5px 0;
 }
 .address_text {
     width: 100%;
@@ -1260,7 +1265,7 @@ textarea#comment::placeholder {
     border: 0px;
 }
 input.mail_text::placeholder {
-    color: #2b2c2c;
+    color: #a0a0a0;
 }
 .subscribe_bt {
     width: 100%;
