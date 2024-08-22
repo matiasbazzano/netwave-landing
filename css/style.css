@@ -529,6 +529,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+    .floating-image {
+        display: none;
+    }
+
     .banner_taital_1 {
         font-size: 18px !important;
         line-height: 0px !important;
@@ -650,6 +654,10 @@ button {
     }
 
     @media screen and (max-width: 375px) {
+        .floating-image {
+            display: none;
+        }
+
         .logo {
           flex-direction: row !important; /* Alinea el logo y el texto en una fila */
           justify-content: center !important; /* Centra horizontalmente el logo y el texto */
@@ -698,6 +706,11 @@ button {
       }
 
       @media screen and (max-width: 884px) {
+
+        .floating-image {
+            display: none;
+        }
+
         .logo {
           flex-direction: row !important; /* Alinea el logo y el texto en una fila */
           justify-content: center !important; /* Centra horizontalmente el logo y el texto */
@@ -744,6 +757,21 @@ button {
             font-size: 16px; /* Ajusta el tamaño de fuente del botón */
           }
       }
+
+      @media (max-width: 1700px) {
+        .floating-image {
+            position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor banner_main */
+            top: 180px !important; /* Ajusta la distancia desde el fondo del contenedor */
+            left: 84% !important; /* Posiciona la imagen horizontalmente en el centro del contenedor */
+            transform: translateX(-50%); /* Ajusta la imagen para que esté centrada */
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .floating-image img {
+            max-width: 300px !important; /* Ajusta el tamaño de la imagen si es necesario */
+            height: auto;
+        }
+    }
 
 
 .brand-carousel {
@@ -1267,6 +1295,28 @@ textarea#comment::placeholder {
 input.mail_text::placeholder {
     color: #a0a0a0;
 }
+
+.floating-image {
+    position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor banner_main */
+    top: 135px; /* Ajusta la distancia desde el fondo del contenedor */
+    left: 80%; /* Posiciona la imagen horizontalmente en el centro del contenedor */
+    transform: translateX(-50%); /* Ajusta la imagen para que esté centrada */
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-image img {
+    max-width: 350px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+
 .subscribe_bt {
     width: 100%;
     float: left;

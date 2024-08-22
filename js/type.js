@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     var options = {
         strings: [
-            "Dynamic websites that captivate",
+            "Captivating websites",
             "Engaging digital experiences",
-            "Innovative solutions for growth",
-            "Responsive designs for any device",
-            "Interactive platforms to connect",
-            "Creative solutions for your brand",
-            "Functional sites enhancing UX",
-            "Visually stunning web presence",
-            "Cutting-edge web solutions",
-            "Seamless digital experiences",
-            "High-performance websites",
-            "Elegant designs that resonate",
-            "Powerful online tools for growth"
+            "Responsive designs",
+            "Interactive platforms",
+            "Creative brand solutions",
+            "UX-enhancing sites",
+            "Stunning web presence",
+            "Cutting-edge solutions",
+            "Seamless experiences",
+            "High-performance sites",
+            "Elegant designs",
+            "Powerful growth tools"
         ],
         typeSpeed: 50,
         backSpeed: 25,
