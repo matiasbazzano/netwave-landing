@@ -613,7 +613,42 @@ button {
       .works_section_2 {
         margin-bottom: -50px;
       }
-}
+    }
+
+    @media screen and (max-width: 375px) {
+        .logo {
+          flex-direction: row !important; /* Alinea el logo y el texto en una fila */
+          justify-content: center !important; /* Centra horizontalmente el logo y el texto */
+        }
+      
+        .logo img {
+          max-width: 50px !important; /* Ajusta el tamaño del logo en resoluciones más pequeñas */
+          margin-right: 5px !important; /* Espacio reducido entre el logo y el texto */
+        }
+      
+        .netwave-text {
+          font-size: 16px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
+          margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
+        }
+      }
+
+      @media screen and (max-width: 884px) {
+        .logo {
+          flex-direction: row !important; /* Alinea el logo y el texto en una fila */
+          justify-content: center !important; /* Centra horizontalmente el logo y el texto */
+        }
+      
+        .logo img {
+          max-width: 50px !important; /* Ajusta el tamaño del logo en resoluciones más pequeñas */
+          margin-right: 5px !important; /* Espacio reducido entre el logo y el texto */
+        }
+      
+        .netwave-text {
+          font-size: 16px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
+          margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
+        }
+      }
+
 
 .brand-carousel {
     width: 70%;
