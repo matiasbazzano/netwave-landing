@@ -532,7 +532,11 @@ button {
 @media screen and (max-width: 768px) {
     .banner_taital_1 {
         font-size: 18px !important;
-        line-height: 18px !important;
+        line-height: 0px !important;
+    }
+
+    .banner_taital {
+        line-height: 28px !important;
     }
 
     .logo {
