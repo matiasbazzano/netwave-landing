@@ -19,4 +19,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       alert('Failed to send email');
     });
   });
-  

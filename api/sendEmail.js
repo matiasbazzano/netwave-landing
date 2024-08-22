@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-      from: email,
+      from: 'petviewerhelp@gmail.com',
       to: 'petviewerhelp@gmail.com',
       subject: `Message from ${name}`,
       text: `Phone: ${phone}\n\nMessage: ${message}`,
