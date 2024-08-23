@@ -10,7 +10,8 @@ function closeMenu() {
 }
 
 // Abre y cierra el menú al hacer clic en el botón
-hamburgerMenu.addEventListener('click', () => {
+hamburgerMenu.addEventListener('click', (event) => {
+    event.stopPropagation(); // Evita que el clic se propague al document
     menu.classList.toggle('active');
     hamburgerMenu.classList.toggle('open');
 });
@@ -27,4 +28,9 @@ document.addEventListener('click', (event) => {
     if (!menu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
         closeMenu();
     }
+});
+
+// Evita que el menú se cierre cuando se hace clic dentro del menú
+menu.addEventListener('click', (event) => {
+    event.stopPropagation();
 });
