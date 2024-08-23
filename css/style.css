@@ -317,7 +317,7 @@ button {
    background-color: #333;
    color: #fff;
    padding: 10px 20px;
-   border-radius: 5px;
+   border-radius: 8px;
    text-decoration: none;
 }
 
@@ -529,6 +529,22 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+    .send_btn {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-top: 0px !important;
+        display: flex !important;
+        justify-content: center !important; /* Centra el botón horizontalmente */
+        margin-bottom: 10px !important;
+    }
+
+    .send_btn button {
+        width: 80% !important; /* Permite que el botón se ajuste a su contenido */
+        float: none !important; /* Elimina el float en móviles */
+        max-width: 180px !important;
+    }
+
     .floating-image {
         display: none;
     }
@@ -985,6 +1001,7 @@ button {
     padding: 10px 0px;
     text-transform: uppercase;
     border: 1px solid #05141f;
+    border-radius: 8px;
 }
 .read_bt a:hover {
     color: #000;
@@ -1227,6 +1244,32 @@ button {
     border-radius: 13px;
   }
 
+  .send_btn {
+    width: 170px;
+    margin-right: 35px;
+    float: right;
+}
+
+.send_btn button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #05141f;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    border: 1px solid #05141f;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+}
+
+.send_btn button:hover {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
 input.email-bt::placeholder {
     color: #a0a0a0;
 }
@@ -1242,20 +1285,7 @@ input.email-bt::placeholder {
 textarea#comment::placeholder {
     color: #a0a0a0;
 }
-.send_btn {
-    width: 170px;
-    float: right;
-}
-.send_btn a{
-    width: 100%;
-    float: right;
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #c9e5fb;
-    padding: 10px;
-    border-radius: 5px;
-}
+
 .footer_section{
   width: 100%;
   float: left;
