@@ -349,7 +349,6 @@ button {
 
 .logo img {
     max-width: 70px;
-    margin-right: 10px;
 }
 
 .netwave-text {
@@ -485,7 +484,7 @@ button {
     display: none !important; /* Oculta el menú por defecto */
     position: absolute;
     top: 60px; /* Ajusta según la altura de tu navbar */
-    right: 20px; /* Ajusta según tu diseño */
+    left: 10px; /* Ajusta esta propiedad para mover el menú a la derecha del borde */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
