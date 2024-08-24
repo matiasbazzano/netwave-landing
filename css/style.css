@@ -620,6 +620,11 @@ button {
     .header_section {
         padding: 3px 3px 0px 0px !important;
     }
+
+    .dolor_text {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     
     .send_btn {
         width: 100% !important;
