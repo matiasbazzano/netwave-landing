@@ -226,14 +226,6 @@ button {
    align-items: center;
 }
 
-.netwave-text {
-    font-weight: bold;
-    font-size: 30px;
-   color: #333;
-   margin-left: 10px;
-   vertical-align: middle;
-}
-
 .menu {
    display: none; /* Escondemos el menú por defecto */
    position: absolute;
@@ -336,7 +328,10 @@ button {
 
 .netwave-text {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
+    color: #333;
+    margin-left: 10px;
+    vertical-align: middle;
     position: relative;
     top: 5px;
     white-space: nowrap;
@@ -613,6 +608,10 @@ button {
 
 @media screen and (max-width: 768px) {
 
+    .services_section::after {
+        right: 0% !important;
+    }
+
     .language-toggle {
         left: 25px !important;
     }
@@ -664,12 +663,6 @@ button {
 
     .logo img {
         max-width: 50px;
-    }
-
-    .netwave-text {
-        font-size: 20px;
-        line-height: 1;
-        margin: 0;
     }
 
     .banner_main {
@@ -767,6 +760,11 @@ button {
     }
 
     @media screen and (max-width: 375px) {
+
+        .services_section::after {
+            right: 0% !important;
+        }
+
         .floating-image {
             display: none;
         }
@@ -779,11 +777,6 @@ button {
         .logo img {
           max-width: 50px !important; /* Ajusta el tamaño del logo en resoluciones más pequeñas */
           margin-right: 5px !important; /* Espacio reducido entre el logo y el texto */
-        }
-      
-        .netwave-text {
-          font-size: 15px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
-          margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
         }
 
         .about_section {
@@ -820,6 +813,10 @@ button {
 
       @media screen and (max-width: 884px) {
 
+        .services_section::after {
+            right: 0% !important;
+        }
+
         .floating-image {
             display: none;
         }
@@ -835,8 +832,9 @@ button {
         }
       
         .netwave-text {
-          font-size: 15px !important; /* Ajusta el tamaño del texto en resoluciones más pequeñas */
-          margin-left: 5px !important; /* Espacio reducido entre el texto y el logo */
+          font-size: 20px !important;
+          line-height: 1;
+          margin: 0;
         }
 
         .about_section {
@@ -872,9 +870,14 @@ button {
       }
 
       @media (max-width: 1700px) {
+
+        .services_taital {
+            right: 0% !important;
+        }
+
         .floating-image {
             position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor banner_main */
-            top: 180px !important; /* Ajusta la distancia desde el fondo del contenedor */
+            top: 160px !important; /* Ajusta la distancia desde el fondo del contenedor */
             left: 84% !important; /* Posiciona la imagen horizontalmente en el centro del contenedor */
             transform: translateX(-50%); /* Ajusta la imagen para que esté centrada */
             animation: float 3s ease-in-out infinite;
@@ -883,6 +886,10 @@ button {
         .floating-image img {
             max-width: 300px !important; /* Ajusta el tamaño de la imagen si es necesario */
             height: auto;
+        }
+
+        .services_section::after {
+            right: 70%;
         }
     }
 
@@ -1122,12 +1129,14 @@ button {
     top: 0;
     z-index: -1;
 }
+
 .services_taital {
     width: 100%;
     float: left;
     font-size: 36px;
     color: #05141f;
     font-weight: 600;
+    right: 8%;
 }
 
 .image_2 {
