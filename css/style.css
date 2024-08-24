@@ -614,7 +614,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .header_section {
-        padding: 10px 0px 0px 0px !important;
+        padding: 3px 3px 0px 0px !important;
     }
     
     .send_btn {
