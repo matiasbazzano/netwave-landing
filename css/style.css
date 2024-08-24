@@ -220,14 +220,6 @@ button {
     padding-left: 100px;
 }
 
-/* General Styles */
-.header_section {
-   position: relative;
-   background-color: #fff; /* Fondo del header */
-   padding: 20px 0;
-   z-index: 1000;
-}
-
 .navbar {
    display: flex;
    justify-content: space-between;
@@ -325,15 +317,6 @@ button {
 .more_bt a:hover {
    background-color: #555;
 }
-
-/* Estilos del header */
-.header_section {
-    width: 100%;
-    background-color: #f7f7f7; /* Color de fondo opcional */
-    padding: 15px 20px; /* Espaciado en el header */
-    position: relative;
-}
-
 
 .navbar {
     display: flex;
@@ -551,15 +534,6 @@ button {
     background: #555; /* Color del pulgar cuando está en hover */
 }
 
-.header_section {
-    position: fixed; /* Fija el encabezado en la parte superior */
-    top: 0; /* Coloca el encabezado en la parte superior de la página */
-    left: 0; /* Alinea el encabezado al borde izquierdo */
-    width: 100%; /* Hace que el encabezado ocupe todo el ancho de la página */
-    background-color: #fff; /* Asegúrate de que el fondo sea blanco u otro color sólido */
-    z-index: 1000; /* Coloca el encabezado por encima de otros elementos */
-}
-
 .navbar {
     display: flex; /* Utiliza flexbox para la disposición del contenido */
     align-items: center; /* Alinea verticalmente los elementos del navbar */
@@ -578,15 +552,18 @@ button {
     padding: 20px;
 }
 
-
-
 .header_section {
+    position: fixed;
+    top: 0; 
+    left: 0;
     width: 100%;
-    float: left;
+    background-color: #fff;
     background-image: url(../images/banner-bg.png);
-    height: auto;
     background-size: 100%;
-    padding-bottom: 15px;
+    padding: 10px 0px 10px 5px;
+    z-index: 1000;
+    height: auto;
+    float: left;
 }
 
 .bg-light {
@@ -635,6 +612,11 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+    .header_section {
+        padding: 10px 0px 0px 0px !important;
+    }
+    
     .send_btn {
         width: 100% !important;
         margin-right: 0 !important;
@@ -685,6 +667,7 @@ button {
         padding: 25px 0;
         text-align: left;
         background-color: #f7f7f7;
+        margin-top: 60px !important;
      }
 
      .services_section {
