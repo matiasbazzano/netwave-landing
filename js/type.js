@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var options = {
         strings: [
             "Captivating websites",
-            "Engaging digital experiences",
             "Responsive designs",
             "Interactive platforms",
             "Creative brand solutions",
