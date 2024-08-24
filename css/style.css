@@ -292,12 +292,6 @@ button {
    color: #333;
 }
 
-.banner_text {
-   font-size: 18px;
-   color: #555;
-   margin: 20px 0;
-}
-
 .more_bt a {
    background-color: #333;
    color: #fff;
@@ -390,7 +384,7 @@ button {
     left: 2px;
     width: 26px;
     height: 26px;
-    background-color: rgba(255, 255, 255, 0.9); /* Ajusta la transparencia del círculo */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     transition: all 0.3s;
 }
@@ -404,23 +398,23 @@ button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 22px; /* Un poco más grande que antes, pero aún menor que el círculo */
+    width: 22px;
     height: 22px;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8; /* Hacer el icono un poco más transparente */
+    opacity: 0.8;
     transition: opacity 0.3s;
 }
 
-.flag-spanish {
-    left: 4px; /* Ajuste fino para centrar mejor */
-    background-image: url('../images/spanish.png');
+.flag-english {
+    left: 4px;
+    background-image: url('../images/english.png');
     opacity: 1;
 }
 
-.flag-english {
-    right: 4px; /* Ajuste fino para centrar mejor */
-    background-image: url('../images/english.png');
+.flag-spanish {
+    right: 4px;
+    background-image: url('../images/spanish.png');
     opacity: 0;
 }
 
@@ -428,13 +422,14 @@ button {
     left: calc(100% - 28px);
 }
 
-#language-switch:checked + .toggle .flag-spanish {
+#language-switch:checked + .toggle .flag-english {
     opacity: 0;
 }
 
-#language-switch:checked + .toggle .flag-english {
+#language-switch:checked + .toggle .flag-spanish {
     opacity: 1;
 }
+
 
 
 .hamburger-menu {
