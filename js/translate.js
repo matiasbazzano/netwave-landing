@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_form_send_button: 'SEND',
             footer_text: "Share your vision with us and let's create something amazing together. We’re here to help bring your ideas to life.",
             copyright_text: 'Copyright © 2024 - All Rights Reserved.'
-
         },
         es: {
             menu_about_us: 'Sobre Nosotros',
@@ -78,9 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const languageSwitch = document.getElementById('language-switch');
-    
+
+
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    languageSwitch.checked = savedLanguage === 'es';
+    translatePage(savedLanguage);
+
     languageSwitch.addEventListener('change', function() {
         const language = languageSwitch.checked ? 'es' : 'en';
+        localStorage.setItem('preferredLanguage', language); 
         translatePage(language);
     });
 
@@ -99,7 +104,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    const initialLanguage = languageSwitch.checked ? 'es' : 'en';
-    translatePage(initialLanguage);
 });
