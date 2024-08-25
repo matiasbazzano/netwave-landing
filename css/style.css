@@ -975,10 +975,6 @@ button {
 	background-color: #05141f;
 }
 
-#navbarSupportedContent: {
-	display: none !important;
-}
-
 .navbar-expand-lg .navbar-nav .nav-link {
 	display: none;
 }
