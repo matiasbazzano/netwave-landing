@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Sitios que mejoran la UX",
                 "Presencia web eficaz",
                 "Soluciones de vanguardia",
+                "Experiencias fluidas",
                 "Sitios de alto rendimiento",
                 "Diseños elegantes",
                 "Herramientas de crecimiento"
@@ -57,16 +58,29 @@ document.addEventListener('DOMContentLoaded', function () {
         elements.forEach(element => {
             const key = element.getAttribute('data-lang');
             if (translations[language] && translations[language][key]) {
-                element.innerHTML = translations[language][key];
+                if (element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'textarea') {
+                    element.setAttribute('placeholder', translations[language][key]);
+                } else if (element.tagName.toLowerCase() === 'button') {
+                    element.textContent = translations[language][key];
+                } else {
+                    element.innerHTML = translations[language][key];
+                }
             }
         });
     }
 
-    languageSwitch.addEventListener('change', function() {
-        const language = languageSwitch.checked ? 'es' : 'en';
+    function setLanguage(language) {
         translatePage(language);
         initializeTyped(language);
+        localStorage.setItem('selectedLanguage', language);
+        languageSwitch.checked = (language === 'es');
+    }
+
+    languageSwitch.addEventListener('change', function() {
+        const language = languageSwitch.checked ? 'es' : 'en';
+        setLanguage(language);
     });
 
-    initializeTyped('en');
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    setLanguage(savedLanguage);
 });
