@@ -710,23 +710,10 @@ button {
 	.about_section .image_1 {
 		display: block;
 		margin: 0 auto;
-		width: 80%;
+		width: 100%;
 		float: none;
 	}
-
-	.about_section .read_bt {
-		display: inline-block;
-		width: auto;
-		margin: 20px auto;
-		float: none;
-	}
-
-	.about_section .read_bt a {
-		display: inline-block;
-		padding: 10px 20px;
-		font-size: 16px;
-	}
-
+	
 	.contact-container {
         flex-direction: column !important;
         align-items: center !important;
@@ -754,6 +741,19 @@ button {
 	.footer_logo {
 		margin-top: 15px !important;
 	}
+
+	.read_bt {
+        position: static !important;
+        text-align: center !important;
+        margin-top: 35px !important;
+        width: 100% !important;
+    }
+    
+    .read_bt a {
+        width: auto !important;
+        display: inline-block !important;
+		margin-top: 14px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -779,6 +779,11 @@ button {
 		text-align: center;
 	}
 
+	.about_section .read_bt {
+        float: none !important;
+        margin: 20px auto !important;
+    }
+
 	.about_section .col-md-6 {
 		float: none;
 		display: inline-block;
@@ -790,13 +795,6 @@ button {
 		display: block;
 		margin: 0 auto;
 		width: 80%;
-		float: none;
-	}
-
-	.about_section .read_bt {
-		display: inline-block;
-		width: auto;
-		margin: 20px auto;
 		float: none;
 	}
 
@@ -836,6 +834,11 @@ button {
 		text-align: center;
 	}
 
+	.about_section .read_bt {
+        float: none !important;
+        margin: 20px auto !important;
+    }
+
 	.about_section .col-md-6 {
 		float: none;
 		display: inline-block;
@@ -847,13 +850,6 @@ button {
 		display: block;
 		margin: 0 auto;
 		width: 80%;
-		float: none;
-	}
-
-	.about_section .read_bt {
-		display: inline-block;
-		width: auto;
-		margin: 20px auto;
 		float: none;
 	}
 
@@ -886,6 +882,12 @@ button {
 		right: 70%;
 	}
 }
+
+	@media (max-width: 1366px) {
+		.floating-image {
+			display: none;
+		}
+	}
 
 .brand-carousel {
 	width: 70%;
@@ -1108,29 +1110,35 @@ button {
 	padding-top: 40px;
 }
 
-.read_bt {
-	width: 170px;
-	float: left;
-	margin-top: 60px;
+.col-md-6 {
+    position: relative;
 }
 
+.read_bt {
+    position: absolute;
+    left: 0;
+    margin-top: 35px;
+}
+
+/* Estilos del botón */
 .read_bt a {
-	width: 100%;
-	float: left;
-	font-size: 16px;
-	color: #ffffff;
-	background-color: #05141f;
-	text-align: center;
-	padding: 10px 0px;
-	text-transform: uppercase;
-	border: 1px solid #05141f;
-	border-radius: 8px;
+    display: inline-block;
+    width: 170px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #05141f;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid #05141f;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .read_bt a:hover {
-	color: #000;
-	background-color: transparent;
-	border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
 }
 
 .services_section {
@@ -1337,6 +1345,7 @@ button {
 	color: #030000;
 	text-align: center;
 	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 .works_section_2 {
