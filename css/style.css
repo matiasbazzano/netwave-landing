@@ -316,7 +316,7 @@ button {
 }
 
 .footer_logo {
-	margin-top: 50px;
+	margin-top: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -725,6 +725,34 @@ button {
 		display: inline-block;
 		padding: 10px 20px;
 		font-size: 16px;
+	}
+
+	.contact-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .contact-image-column, .contact-form-column {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+	.contact-image-column {
+		margin-top: -30px;
+	}
+
+    .image_10 {
+        margin-right: 0 !important;
+    }
+
+    .send_btn {
+        display: flex;
+        justify-content: center !important;
+    }
+
+	.footer_logo {
+		margin-top: 15px !important;
 	}
 }
 
@@ -1341,92 +1369,102 @@ button {
 }
 
 .contact_section_2 {
-	width: 100%;
-	float: left;
-	background-color: #f9f9fb;
-	height: auto;
-	margin-top: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+    width: 100%;
+    background-color: #f9f9fb;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+	margin-top: 15px;
+}
+
+.contact-image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image_10 {
-	width: 80%;
-	max-width: 500px;
-	display: block;
-	margin: 0 auto;
-	transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
 }
 
 .image_10:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-.email_text {
-	width: 90%;
-	float: left;
-	padding: 50px 20px 20px 20px;
+.contact-form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.email-bt {
-	width: 100%;
-	float: left;
-	font-size: 18px;
-	color: #2a2a2c;
-	margin-bottom: 20px;
-	padding: 10px 15px;
-	border: 0px;
-	border-radius: 13px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.email-bt, .massage-bt {
+    width: 100%;
+    font-size: 18px;
+    color: #2a2a2c;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 13px;
 }
 
 .massage-bt {
-	resize: none;
-	border-radius: 13px;
+    resize: none;
 }
 
 .send_btn {
-	width: 170px;
-	margin-right: 35px;
-	float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .send_btn button {
-	width: 100%;
-	font-size: 16px;
-	color: #ffffff;
-	background-color: #05141f;
-	text-align: center;
-	padding: 10px 0px;
-	text-transform: uppercase;
-	border: 1px solid #05141f;
-	cursor: pointer;
-	outline: none;
-	border-radius: 8px;
+    width: 170px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #05141f;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid #05141f;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
 }
 
 .send_btn button:hover {
-	color: #000;
-	background-color: transparent;
-	border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
 }
 
-input.email-bt::placeholder {
-	color: #a0a0a0;
-}
-
-.massage-bt {
-	width: 100%;
-	float: left;
-	font-size: 18px;
-	color: #2a2a2c;
-	margin-bottom: 20px;
-	padding: 10px 15px;
-	border: 0px;
-}
-
+input.email-bt::placeholder,
 textarea#comment::placeholder {
-	color: #a0a0a0;
+    color: #a0a0a0;
 }
+
 
 .footer_section {
 	width: 100%;
@@ -1434,14 +1472,6 @@ textarea#comment::placeholder {
 	background-color: #2a2a2c;
 	height: auto;
 	padding: 5px 0;
-}
-
-.address_text {
-	width: 100%;
-	float: left;
-	font-size: 24px;
-	color: #fffcf4;
-	text-transform: uppercase;
 }
 
 .dolor_text {
@@ -1453,23 +1483,6 @@ textarea#comment::placeholder {
 	margin: 0px;
 	justify-content: center;
 	text-align: center;
-}
-
-.mail_text {
-	width: 100%;
-	float: left;
-	font-size: 18px;
-	color: #2b2c2c;
-	background-color: #ffffff;
-	height: auto;
-	padding: 5px 20px;
-	margin-top: 18px;
-	border-radius: 20px;
-	border: 0px;
-}
-
-input.mail_text::placeholder {
-	color: #a0a0a0;
 }
 
 .floating-image {
