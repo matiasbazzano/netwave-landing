@@ -669,6 +669,7 @@ button {
 		justify-content: center;
 		text-align: center;
 		padding: 20px;
+		margin-top: 110px;
 	}
 
 	.technology_text {
@@ -1136,7 +1137,6 @@ button {
 	width: 80%;
 	float: left;
 	padding-left: 120px;
-	margin-bottom: 20px;
 	transition: transform 0.3s ease;
 }
 
@@ -1155,9 +1155,36 @@ button {
 	border: 1px solid #f3f3f3;
 	height: auto;
 	padding: 20px;
-	margin-top: 70px;
 	border-radius: 10px;
 	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-md-6:nth-of-type(1) .box_main {
+    align-self: center;
+}
+
+.col-md-6:nth-of-type(2) .box_main {
+    align-self: flex-start;
+}
+
+.col-md-6:nth-of-type(3) .box_main {
+    align-self: flex-end;
+}
+
+.col-md-6:nth-of-type(4) .box_main {
+    align-self: center;
 }
 
 .technology_text {
