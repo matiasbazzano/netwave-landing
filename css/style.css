@@ -576,11 +576,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
-	.work_taital {
-		margin-bottom: -10px !important;
-	}
-
 	.services_section::after {
 		right: 0% !important;
 	}
@@ -1350,7 +1345,6 @@ button {
 	color: #030000;
 	text-align: center;
 	font-weight: 600;
-	margin-bottom: -30px;
 }
 
 .works_section_2 {
