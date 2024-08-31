@@ -23,37 +23,50 @@
    <body>
       <div class="header_section">
          <nav class="navbar">
-            <button class="hamburger-menu" aria-label="Toggle navigation" id="hamburger-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            </button>
-            <div class="logo">
-               <a href="https://netwave-dev.vercel.app/">
-               <img src="images/nw-removebg-preview.png" alt="Netwave Logo">
-               <span class="netwave-text">netwave</span>
-               </a>
-            </div>
-            <div class="language-toggle">
-               <input type="checkbox" id="language-switch" />
-               <label for="language-switch" class="toggle">
-                  <div class="circle"></div>
-                  <div class="flags">
-                     <div class="flag flag-english"></div>
-                     <div class="flag flag-spanish"></div>
-                  </div>
-               </label>
-            </div>
+             <button class="hamburger-menu" aria-label="Toggle navigation" id="hamburger-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </button>
+             <div class="logo-container">
+                 <a href="https://netwave-dev.vercel.app/">
+                     <img src="images/nw-removebg-preview.png" alt="Netwave Logo">
+                     <span class="netwave-text">netwave</span>
+                 </a>
+             </div>
+             <div class="toggles-container">
+                 <div class="language-toggle">
+                     <input type="checkbox" id="language-switch" />
+                     <label for="language-switch" class="toggle">
+                         <div class="circle"></div>
+                         <div class="flags">
+                             <div class="flag flag-english"></div>
+                             <div class="flag flag-spanish"></div>
+                         </div>
+                     </label>
+                 </div>
+                 <div class="theme-toggle">
+                     <input type="checkbox" id="theme-switch" />
+                     <label for="theme-switch" class="toggle">
+                         <div class="circle"></div>
+                         <div class="icons">
+                             <div class="icon light-mode"></div>
+                             <div class="icon dark-mode"></div>
+                         </div>
+                     </label>
+                 </div>
+             </div>
          </nav>
          <div class="menu" id="menu">
-            <ul>
-               <li><a data-lang="menu_about_us" href="#about_us">About Us</a></li>
-               <li><a data-lang="menu_services" href="#our_services">Our Services</a></li>
-               <li><a data-lang="menu_clients" href="#clients">Our Clients</a></li>
-               <li><a data-lang="menu_contact" href="#form-get-in-touch">Contact</a></li>
-            </ul>
+             <ul>
+                 <li><a data-lang="menu_about_us" href="#about_us">About Us</a></li>
+                 <li><a data-lang="menu_services" href="#our_services">Our Services</a></li>
+                 <li><a data-lang="menu_clients" href="#clients">Our Clients</a></li>
+                 <li><a data-lang="menu_contact" href="#form-get-in-touch">Contact</a></li>
+             </ul>
          </div>
-      </div>
+     </div>
+         
       <div class="banner_main">
          <div class="banner_content">
             <h1 class="banner_taital" data-lang="banner_title">We build</h1>
