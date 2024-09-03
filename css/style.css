@@ -993,6 +993,24 @@ button {
 	}
 }
 
+@keyframes colorFrameDarkMode {
+    0% {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    33% {
+        color: rgba(0, 190, 0, 0.8);
+    }
+
+    66% {
+        color: rgba(0, 165, 0, 0.6);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
 .banner_text {
 	width: 40%;
 	float: left;
@@ -1022,6 +1040,7 @@ button {
 	text-align: center;
 	padding: 10px 0px;
 	text-transform: uppercase;
+	border: 1px solid #05141f;
 }
 
 .more_bt a:hover {
@@ -1652,4 +1671,152 @@ textarea#comment::placeholder {
 
 .margin_top_0 {
 	margin-top: 0px;
+}
+
+body.dark-mode {
+    background-color: #021400;
+}
+
+body.dark-mode .header_section {
+    background-image: url(../images/banner-bg-dark-mode.png);
+}
+
+body.dark-mode .services_section::after {
+    background-color: #010f00;
+}
+
+body.dark-mode .image-container {
+    background-color: #010f00;
+}
+
+body.dark-mode .banner_main {
+	background-color: #010f00;
+}
+
+
+body.dark-mode .works_section {
+	background-color: #010f00;
+}
+
+body.dark-mode .contact_section_2 {
+	background-color: #010f00;
+}
+
+body.dark-mode .copyright_section {
+	background-color: #010f00;
+}
+
+body.dark-mode .banner_taital {
+	color: #065700;
+}
+
+body.dark-mode #typed-output {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .banner_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .hamburger-menu .bar {
+	background-color: #757575;
+}
+
+body.dark-mode .about_taital {
+	color: #065700;
+}
+
+body.dark-mode .about_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .services_taital {
+	color: #065700;
+}
+
+body.dark-mode .technology_text {
+	color: #065700;
+}
+
+body.dark-mode .dummy_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .netwave-text {
+    animation: colorFrameDarkMode 6s infinite;
+}
+
+body.dark-mode .software_taital {
+	color: #065700;
+}
+
+body.dark-mode .software_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .how_we_work_section {
+	color: #065700;
+}
+
+body.dark-mode .lorem_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .fully_text {
+	color: rgb(190, 190, 190);
+}
+
+body.dark-mode .icon_container {
+	filter: invert(1);
+}
+
+body.dark-mode .work_taital {
+	color: #065700;
+}
+
+body.dark-mode .email-bt, body.dark-mode .massage-bt {
+	background-color: #022200;
+}
+
+body.dark-mode .more_bt a {
+	background-color: #7e7e7e;
+	color: black;
+}
+
+body.dark-mode .read_bt a {
+	background-color: #7e7e7e;
+	color: black;
+}
+
+body.dark-mode .send_btn button {
+	background-color: #7e7e7e;
+	color: black;
+}
+
+body.dark-mode .copyright_text {
+	color: white;
+}
+
+body.dark-mode .toggle {
+	background-color: #333333;
+}
+
+body.dark-mode .footer_section {
+	background-color: #021400;
+}
+
+body.dark-mode .image-container img {
+    filter: brightness(1) opacity(0.6);
+}
+
+body.dark-mode .about-image-column img {
+    filter: brightness(1) opacity(0.6);
+}
+
+body.dark-mode .floating-image img {
+    filter: brightness(1) opacity(0.6);
+}
+
+body.dark-mode .contact-image-column img {
+    filter: brightness(1) opacity(0.6);
 }
