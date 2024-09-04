@@ -630,7 +630,8 @@ button {
 
 	.services_section::after {
 		right: 0% !important;
-	}
+		border-radius: 0 !important;
+	}	
 
 	.language-toggle, .theme-toggle {
 		left: 25px !important;
