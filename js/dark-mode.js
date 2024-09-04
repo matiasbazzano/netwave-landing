@@ -4,8 +4,8 @@ function loadTheme() {
         document.body.classList.add(savedTheme);
         document.getElementById('theme-switch').checked = (savedTheme === 'dark-mode');
     } else {
-        document.body.classList.add('dark-mode');
-        document.getElementById('theme-switch').checked = true;
+        document.body.classList.add('light-mode');
+        document.getElementById('theme-switch').checked = false;
     }
 }
 
