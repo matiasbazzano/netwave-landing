@@ -957,6 +957,10 @@ button {
 	display: none !important;
 }
 
+.slick-arrow {
+	display: none !important;
+}
+
 .typed-cursor {
 	font-size: 55px;
 	color: #323232;
@@ -1674,149 +1678,198 @@ textarea#comment::placeholder {
 }
 
 body.dark-mode {
-    background-color: #021400;
+    background-color: #0b1a0b;
 }
 
 body.dark-mode .header_section {
     background-image: url(../images/banner-bg-dark-mode.png);
+    background-color: #112a11;
 }
 
-body.dark-mode .services_section::after {
-    background-color: #010f00;
+body.dark-mode .footer_section {
+	background-color: #0b1a0b;
 }
 
-body.dark-mode .image-container {
-    background-color: #010f00;
-}
-
-body.dark-mode .banner_main {
-	background-color: #010f00;
-}
-
-
-body.dark-mode .works_section {
-	background-color: #010f00;
-}
-
-body.dark-mode .contact_section_2 {
-	background-color: #010f00;
-}
-
+body.dark-mode .services_section::after,
+body.dark-mode .image-container,
+body.dark-mode .banner_main,
+body.dark-mode .works_section,
+body.dark-mode .contact_section_2,
 body.dark-mode .copyright_section {
-	background-color: #010f00;
+    background-color: #112a11;
 }
 
-body.dark-mode .banner_taital {
-	color: #065700;
+body.dark-mode .banner_taital,
+body.dark-mode .about_taital,
+body.dark-mode .services_taital,
+body.dark-mode .technology_text,
+body.dark-mode .software_taital,
+body.dark-mode .how_we_work_section,
+body.dark-mode .work_taital {
+    color: #39a839;
 }
 
-body.dark-mode #typed-output {
-	color: rgb(190, 190, 190);
-}
-
-body.dark-mode .banner_text {
-	color: rgb(190, 190, 190);
+body.dark-mode #typed-output,
+body.dark-mode .banner_text,
+body.dark-mode .about_text,
+body.dark-mode .dummy_text,
+body.dark-mode .software_text,
+body.dark-mode .lorem_text,
+body.dark-mode .fully_text,
+body.dark-mode .copyright_text {
+    color: #b9eab9;
 }
 
 body.dark-mode .hamburger-menu .bar {
-	background-color: #757575;
+    background-color: #256325;
 }
 
-body.dark-mode .about_taital {
-	color: #065700;
+body.dark-mode .box_main {
+	border: 1px solid #256325;
 }
 
-body.dark-mode .about_text {
-	color: rgb(190, 190, 190);
+body.dark-mode .more_bt {
+    width: 170px;
+    float: left;
 }
 
-body.dark-mode .services_taital {
-	color: #065700;
+body.dark-mode .more_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    background-color: #256325;
+    color: #b9eab9;
+    border: 1px solid #256325;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
-body.dark-mode .technology_text {
-	color: #065700;
+body.dark-mode .more_bt a:hover {
+    background-color: #39a839;
+    color: #ffffff;
+    border: 1px solid #39a839;
 }
 
-body.dark-mode .dummy_text {
-	color: rgb(190, 190, 190);
+body.dark-mode .read_bt a,
+body.dark-mode .send_btn button {
+    background-color: #256325;
+    color: #b9eab9;
+    border: 1px solid #256325;
+}
+
+body.dark-mode .read_bt a:hover,
+body.dark-mode .send_btn button:hover {
+    background-color: #39a839;
+    color: #ffffff;
+    border: 1px solid #39a839;
+}
+
+body.dark-mode .toggle {
+    background-color: #256325;
+}
+
+body.dark-mode .circle {
+	background-color: #39a839;
 }
 
 body.dark-mode .netwave-text {
     animation: colorFrameDarkMode 6s infinite;
 }
 
-body.dark-mode .software_taital {
-	color: #065700;
+@keyframes colorFrameDarkMode {
+    0% {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    33% {
+        color: rgba(50, 255, 50, 0.9);
+    }
+
+    66% {
+        color: rgba(0, 255, 0, 0.7);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.8);
+    }
 }
 
-body.dark-mode .software_text {
-	color: rgb(190, 190, 190);
-}
-
-body.dark-mode .how_we_work_section {
-	color: #065700;
-}
-
-body.dark-mode .lorem_text {
-	color: rgb(190, 190, 190);
-}
-
-body.dark-mode .fully_text {
-	color: rgb(190, 190, 190);
-}
-
-body.dark-mode .icon_container {
-	filter: invert(1);
-}
-
-body.dark-mode .work_taital {
-	color: #065700;
-}
-
-body.dark-mode .email-bt, body.dark-mode .massage-bt {
-	background-color: #022200;
-}
-
-body.dark-mode .more_bt a {
-	background-color: #7e7e7e;
-	color: black;
-}
-
-body.dark-mode .read_bt a {
-	background-color: #7e7e7e;
-	color: black;
-}
-
-body.dark-mode .send_btn button {
-	background-color: #7e7e7e;
-	color: black;
-}
-
-body.dark-mode .copyright_text {
-	color: white;
-}
-
-body.dark-mode .toggle {
-	background-color: #333333;
-}
-
-body.dark-mode .footer_section {
-	background-color: #021400;
-}
-
-body.dark-mode .image-container img {
-    filter: brightness(1) opacity(0.6);
-}
-
-body.dark-mode .about-image-column img {
-    filter: brightness(1) opacity(0.6);
-}
-
-body.dark-mode .floating-image img {
-    filter: brightness(1) opacity(0.6);
-}
-
+body.dark-mode .image-container img,
+body.dark-mode .about-image-column img,
+body.dark-mode .floating-image img,
 body.dark-mode .contact-image-column img {
-    filter: brightness(1) opacity(0.6);
+    filter: brightness(1) opacity(0.7);
+}
+
+body.dark-mode .menu {
+    background-color: #0b1a0b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .menu a {
+    color: #b9eab9;
+}
+
+body.dark-mode .menu a:hover {
+    background-color: #112a11;
+    color: #ffffff;
+}
+
+body.dark-mode .icon_container img {
+	filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1390%) hue-rotate(59deg) brightness(94%) contrast(87%);
+}
+
+body.dark-mode .footer_netwave-text {
+	color: #b9eab9 !important;
+}
+
+body.dark-mode .dolor_text {
+	color: #d7f8d7;
+}
+
+body.dark-mode .social_icon {
+	border-top: 1px solid #87c287;
+}
+
+body.dark-mode .social_icon img {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1390%) hue-rotate(59deg) brightness(94%) contrast(87%);
+}
+
+body.dark-mode .email-bt,
+body.dark-mode .massage-bt {
+    background-color: #1e3b1e;
+    color: #d7f8d7;
+    border: 1px solid #256325;
+}
+
+body.dark-mode .email-bt::placeholder,
+body.dark-mode .massage-bt::placeholder {
+    color: #a9d9a9 !important;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background-color: #112a11;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #256325;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #39a839;
+}
+
+body.dark-mode .brand-carousel img {
+    filter: grayscale(95%) sepia(1) hue-rotate(75deg) saturate(4);
+}
+
+body.dark-mode .brand-carousel:hover img {
+    filter: grayscale(0%) sepia(0) hue-rotate(0deg) saturate(1);
+}
+
+body.dark-mode .slick-arrow {
+	display: none !important;
 }
