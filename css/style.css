@@ -310,7 +310,8 @@ button {
 	padding: 60px 0;
 	text-align: left;
 	background-color: #f7f7f7;
-	padding-bottom: 80px !important;
+	padding-bottom: 90px !important;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .banner_taital {
@@ -612,6 +613,18 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+	.banner_main {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%) !important;
+    }
+
+    .works_section {
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%) !important;
+    }
+
+    .contact_section_2 {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%) !important;
+    }
 
 	.toggles-container {
 		gap: 6px !important;
@@ -1397,6 +1410,7 @@ button {
 	position: relative;
 	background-color: #f9f9fb;
 	padding-bottom: 50px;
+	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
 
 .work_taital {
@@ -1453,11 +1467,14 @@ button {
 }
 
 .contact_section {
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 
+
 .contact_section_2 {
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+	padding-top: 50px !important;
     width: 100%;
     background-color: #f9f9fb;
     margin-top: 50px;
