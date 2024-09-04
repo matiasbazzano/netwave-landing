@@ -614,16 +614,10 @@ button {
 
 @media screen and (max-width: 768px) {
 
-	.banner_main {
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%) !important;
-    }
-
-    .works_section {
-        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%) !important;
-    }
-
+    .banner_main,
+    .works_section,
     .contact_section_2 {
-        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%) !important;
+        clip-path: none !important;
     }
 
 	.toggles-container {
