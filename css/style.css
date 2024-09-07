@@ -614,11 +614,22 @@ button {
 
 @media screen and (max-width: 768px) {
 
-    .banner_main,
-    .works_section,
-    .contact_section_2 {
-        clip-path: none !important;
-    }
+	.banner_main {
+		clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+	}
+
+	.services_section {
+		clip-path: polygon(0 0, 100% 1%, 100% 99%, 0 100%);
+		padding-top: 55px !important;
+	}
+
+	.works_section {
+		clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%) !important;
+	}
+
+	.contact_section_2 {
+		clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%) !important;
+	}
 
 	.toggles-container {
 		gap: 6px !important;
