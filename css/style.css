@@ -947,11 +947,11 @@ button {
 	}
 }
 
-	@media (max-width: 1366px) {
-		.floating-image {
-			display: none;
-		}
+@media (max-width: 1024px) {
+	.floating-image {
+		display: none;
 	}
+}
 
 .brand-carousel {
 	width: 70%;
